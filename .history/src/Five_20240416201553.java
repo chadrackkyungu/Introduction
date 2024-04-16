@@ -6,10 +6,9 @@ public class Five {
     private int speed;
 
     // Constructor
-    public Bicycle(int startGear, int startSpeed) {
-
-        System.out.println(" First value : " + startGear);
-        System.out.println(" Second value : " + startSpeed);
+    public Five(int startGear, int startSpeed) {
+        System.out.println("First value: " + startGear);
+        System.out.println("Second value: " + startSpeed);
 
         gear = startGear;
         speed = startSpeed;
@@ -27,9 +26,8 @@ public class Five {
     public void speedUp(int increment) {
         speed += increment;
     }
-    // end
 
-    // Accessor method
+    // Accessor methods
     public int getSpeed() {
         return speed;
     }
@@ -39,8 +37,10 @@ public class Five {
     }
 
     public static void main(String[] args) {
-        Bicycle myBike = new Bicycle(3, 0);
+        Five myBike = new Five(3, 0);
         myBike.speedUp(10);
         System.out.println("Current speed: " + myBike.getSpeed());
+        System.out.println("Current gear: " + myBike.getGear());
     }
+
 }
